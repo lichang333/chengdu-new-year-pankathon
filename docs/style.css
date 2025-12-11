@@ -356,7 +356,26 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        /* Reduced to fit "Chengdu New Year" better */
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        /* Smaller subtitle */
+        letter-spacing: 2px;
+        /* Reduced spacing */
+    }
+
+    .glass-panel {
+        padding: 1.25rem !important;
+        /* Reduce padding to give more internal space */
+    }
+
+    /* Fix Grid Overflow */
+    .highlights-grid {
+        grid-template-columns: 1fr !important;
+        /* Force single column on mobile */
     }
 
     .timeline::before {
@@ -370,7 +389,8 @@ footer {
     .timeline-content {
         width: 100%;
         text-align: left !important;
-        padding-left: 60px !important;
+        padding-left: 50px !important;
+        /* Slightly reduced padding */
         padding-right: 0 !important;
     }
 
@@ -380,6 +400,8 @@ footer {
 
     .countdown-container {
         gap: 1rem;
+        flex-wrap: wrap;
+        /* Allow wrapping if needed */
     }
 
     .countdown-value {
@@ -397,6 +419,12 @@ footer {
         max-width: 300px;
         text-align: center;
         margin: 0 !important;
+    }
+
+    /* Adjust sponsors for mobile */
+    .sponsors-grid {
+        padding: 1.5rem !important;
+        gap: 1.5rem !important;
     }
 }
 
