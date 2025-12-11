@@ -29,6 +29,12 @@ img {
     height: auto;
 }
 
+input,
+textarea {
+    font-size: 16px;
+    /* Prevent iOS focus auto-zoom */
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -38,6 +44,7 @@ body {
         radial-gradient(circle at 15% 50%, rgba(188, 19, 254, 0.08) 0%, transparent 25%),
         radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.08) 0%, transparent 25%);
     width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
