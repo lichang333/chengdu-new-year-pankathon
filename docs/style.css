@@ -561,8 +561,7 @@ footer {
 
 @media (max-width: 768px) {
     .sponsor-logo {
-        height: 40px;
-        gap: 2rem;
+        height: 65px;
     }
 }
 
