@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chengdu New Year Pankathon 2025 / 成都跨年黑客松</title>
+    <meta name="description"
+        content="Chengdu New Year Pankathon 2025 - Join us for a cross-year hacking challenge! 2025成都跨年黑客松，赛博空间共庆新年。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lichang333.github.io/chengdu-new-year-pankathon/">
+    <meta property="og:title" content="Chengdu New Year Pankathon 2025">
+    <meta property="og:description" content="Code through the New Year. Join us in cyberspace. 跨年倒计时，代码不打烊。">
+    <meta property="og:image" content="https://lichang333.github.io/chengdu-new-year-pankathon/images/panda-mascot.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,9 +24,9 @@
 
     <div class="grid-bg"></div>
 
-    <header style="padding: 20px 0; position: absolute; width: 100%; z-index: 100;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="logo" style="font-family: var(--font-heading); font-weight: 900; font-size: 1.5rem;">
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo logo-text">
                 VIBE<span style="color: var(--primary-neon)">.HACK</span>
             </div>
             <nav>
@@ -34,7 +46,7 @@
                 <span class="location-tag">ONLINE EVENT / 线上活动</span>
             </div>
 
-            <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">
+            <p class="hero-description">
                 Code through the New Year. Join us in cyberspace.
                 <br><span class="cn-text">跨年倒计时，代码不打烊。加入我们，在赛博空间共庆新年。</span>
                 <br><br>
@@ -46,8 +58,8 @@
                 <!-- Countdown injected by JS -->
             </div>
 
-            <div style="margin-top: 3rem;">
-                <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Register 立即报名</a>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">Register 立即报名</a>
                 <a href="#schedule" class="btn btn-gold">Schedule 查看日程</a>
             </div>
         </div>
@@ -59,24 +71,24 @@
             <div class="highlights-grid">
                 <div class="highlight-card">
                     <div class="icon-box">🚀</div>
-                    <h3>Open Topic <span class="cn-text" style="font-size: 0.6em; display: inline;">自由主题</span></h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <h3>Open Topic <span class="cn-text highlight-cn-text">自由主题</span></h3>
+                    <p class="hero-description" style="margin-top: 1rem; margin-bottom: 0;">
                         No limits. Web3, AI, Open Source... Anything goes.
                         <span class="cn-text">没有限制，发挥你的想象力。Web3, AI, 开源... 只要你想。</span>
                     </p>
                 </div>
                 <div class="highlight-card">
                     <div class="icon-box">🌏</div>
-                    <h3>Online <span class="cn-text" style="font-size: 0.6em; display: inline;">线上参与</span></h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <h3>Online <span class="cn-text highlight-cn-text">线上参与</span></h3>
+                    <p class="hero-description" style="margin-top: 1rem; margin-bottom: 0;">
                         Connect to our cyberspace from anywhere.
                         <span class="cn-text">无论你在哪里，只要有网络，就能连接到我们的赛博空间。</span>
                     </p>
                 </div>
                 <div class="highlight-card">
                     <div class="icon-box">🎁</div>
-                    <h3>Awards <span class="cn-text" style="font-size: 0.6em; display: inline;">跨年大奖</span></h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <h3>Awards <span class="cn-text highlight-cn-text">跨年大奖</span></h3>
+                    <p class="hero-description" style="margin-top: 1rem; margin-bottom: 0;">
                         Win gifts and meet fellow hackers.
                         <span class="cn-text">完成挑战，赢取新年好礼。结识志同道合的黑客伙伴。</span>
                     </p>
@@ -86,7 +98,7 @@
     </section>
 
     <section id="schedule" class="schedule container">
-        <h2>Event Schedule <span class="cn-text" style="font-size: 0.4em; display: block; margin-top: 5px;">活动日程</span>
+        <h2>Event Schedule <span class="cn-text section-cn-text">活动日程</span>
         </h2>
         <div class="timeline">
             <!-- Day 1 -->
@@ -94,7 +106,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">DAY 1 - Dec 28</div>
-                    <h3 class="timeline-title">Check-in <span class="cn-text" style="font-size: 0.6em;">签到 & 组队</span>
+                    <h3 class="timeline-title">Check-in <span class="cn-text timeline-cn-text">签到 & 组队</span>
                     </h3>
                     <div class="timeline-desc glass-panel">
                         <p>20:00 - Opening Ceremony <span class="cn-text">开幕式</span></p>
@@ -108,8 +120,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">DAY 2 - Dec 29</div>
-                    <h3 class="timeline-title">Hacking Begins <span class="cn-text"
-                            style="font-size: 0.6em;">黑客马拉松</span></h3>
+                    <h3 class="timeline-title">Hacking Begins <span class="cn-text timeline-cn-text">黑客马拉松</span></h3>
                     <div class="timeline-desc glass-panel">
                         <p>All Day Hacking <span class="cn-text">全天开发</span></p>
                         <p>Mentor Sessions <span class="cn-text">导师辅导 (可选)</span></p>
@@ -122,7 +133,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">DAY 3 - Dec 30</div>
-                    <h3 class="timeline-title">Deep Hacking <span class="cn-text" style="font-size: 0.6em;">深度黑客日</span>
+                    <h3 class="timeline-title">Deep Hacking <span class="cn-text timeline-cn-text">深度黑客日</span>
                     </h3>
                     <div class="timeline-desc glass-panel">
                         <p>Full focus mode <span class="cn-text">沉浸模式</span></p>
@@ -136,8 +147,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">DAY 4 - Dec 31</div>
-                    <h3 class="timeline-title">New Year Sprint <span class="cn-text"
-                            style="font-size: 0.6em;">跨年冲刺</span></h3>
+                    <h3 class="timeline-title">New Year Sprint <span class="cn-text timeline-cn-text">跨年冲刺</span></h3>
                     <div class="timeline-desc glass-panel">
                         <p>Final Coding <span class="cn-text">最后冲刺</span></p>
                         <p>23:59 - Celebration! <span class="cn-text">新年倒计时！</span></p>
@@ -150,7 +160,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">DAY 5 - Jan 1</div>
-                    <h3 class="timeline-title">Demo Day <span class="cn-text" style="font-size: 0.6em;">演示日</span></h3>
+                    <h3 class="timeline-title">Demo Day <span class="cn-text timeline-cn-text">演示日</span></h3>
                     <div class="timeline-desc glass-panel">
                         <p>14:00 - Submission <span class="cn-text">提交代码</span></p>
                         <p>15:00 - Demos <span class="cn-text">项目演示</span></p>
@@ -164,16 +174,16 @@
     <section class="sponsors container">
         <h2>Sponsors</h2>
         <div class="sponsors-grid glass-panel">
-            <img src="images/sponsor-fcc.png" alt="freeCodeCamp Chengdu" class="sponsor-logo">
-            <img src="images/sponsor-deep.jpg" alt="DeepPractice" class="sponsor-logo">
-            <img src="images/sponsor-kaiyuanshe.jpg" alt="KaiYuanShe" class="sponsor-logo">
-            <img src="images/sponsor-ti-link.jpg" alt="TI-Link" class="sponsor-logo">
-            <img src="images/sponsor-afe.png" alt="AI For Everyone" class="sponsor-logo">
-            <img src="images/sponsor-tidb.png" alt="TiDB Community" class="sponsor-logo">
-            <img src="images/sponsor-market.png" alt="Open Source Market" class="sponsor-logo">
-            <img src="images/sponsor-origincode.jpg" alt="OriginCode" class="sponsor-logo">
-            <img src="images/sponsor-chaihuo.jpg" alt="Chaihuo Makers" class="sponsor-logo">
-            <img src="images/sponsor-tongkesong.png" alt="TongKeSong" class="sponsor-logo">
+            <img src="images/sponsor-fcc.png" alt="freeCodeCamp Chengdu" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-deep.jpg" alt="DeepPractice" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-kaiyuanshe.jpg" alt="KaiYuanShe" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-ti-link.jpg" alt="TI-Link" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-afe.png" alt="AI For Everyone" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-tidb.png" alt="TiDB Community" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-market.png" alt="Open Source Market" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-origincode.jpg" alt="OriginCode" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-chaihuo.jpg" alt="Chaihuo Makers" class="sponsor-logo" loading="lazy">
+            <img src="images/sponsor-tongkesong.png" alt="TongKeSong" class="sponsor-logo" loading="lazy">
         </div>
     </section>
 
