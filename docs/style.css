@@ -46,6 +46,14 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    touch-action: pan-x pan-y;
+    /* Discourage zooming */
+}
+
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -210,6 +218,8 @@ h2 {
     mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 100%);
     animation: gridMove 20s linear infinite;
     pointer-events: none;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 @keyframes gridMove {
@@ -593,13 +603,16 @@ footer {
         width: 240px;
         position: absolute;
         top: 12%;
-        right: -50px;
+        right: 0;
+        /* Remove negative positioning */
         left: auto;
         bottom: auto;
         opacity: 0.4;
         mix-blend-mode: screen;
         transform: translateY(0);
         animation: floatMobile 8s ease-in-out infinite;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     @keyframes floatMobile {
