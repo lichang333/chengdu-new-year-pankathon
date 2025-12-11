@@ -33,10 +33,14 @@ body {
     background-image:
         radial-gradient(circle at 15% 50%, rgba(188, 19, 254, 0.08) 0%, transparent 25%),
         radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.08) 0%, transparent 25%);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -143,6 +147,7 @@ h2 {
     position: relative;
     padding-top: 80px;
     /* Accounts for fixed header if needed */
+    overflow-x: hidden;
 }
 
 .hero-content {
@@ -323,7 +328,7 @@ h2 {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
