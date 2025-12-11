@@ -444,7 +444,7 @@ footer {
 .floating-mascot {
     position: absolute;
     right: 2%;
-    top: 55%;
+    top: 75%;
     transform: translateY(-50%);
     width: 380px;
     height: auto;
