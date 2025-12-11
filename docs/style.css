@@ -439,3 +439,57 @@ footer {
         gap: 2rem;
     }
 }
+
+/* Floating Mascot */
+.floating-mascot {
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 380px;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(0, 243, 255, 0.2));
+    opacity: 0.9;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-50%) translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50%) translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(-50%) translateY(0px);
+    }
+}
+
+@media (max-width: 968px) {
+    .floating-mascot {
+        width: 180px;
+        top: 12%;
+        right: 0;
+        opacity: 0.4;
+        transform: translateY(0);
+        animation: floatMobile 6s ease-in-out infinite;
+    }
+
+    @keyframes floatMobile {
+        0% {
+            transform: translateY(0px) rotate(5deg);
+        }
+
+        50% {
+            transform: translateY(-15px) rotate(5deg);
+        }
+
+        100% {
+            transform: translateY(0px) rotate(5deg);
+        }
+    }
+}
